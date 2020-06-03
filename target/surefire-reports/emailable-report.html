@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Zoho</th></tr>
+<tr><td><a href="#t0">Products</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">248,965</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">PriceBook</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">150,617</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">399,582</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Zoho</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Products &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.zoho.crm.scripts.CommonDP.ProductsScript</td><td><a href="#m0">createProductsOrder</a></td><td rowspan="1">1591176424882</td><td rowspan="1">167696</td></tr><tr class="passedeven"><td><a href="#m1">login</a></td><td rowspan="1">1591176354586</td><td rowspan="1">69282</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">PriceBook &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.zoho.crm.scripts.CommonDP.PriceBookScript</td><td><a href="#m2">createPriceBooks</a></td><td rowspan="1">1591176644428</td><td rowspan="1">96555</td></tr><tr><th colspan="4">PriceBook &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.zoho.crm.scripts.CommonDP.PriceBookScript</td><td><a href="#m3">login</a></td><td rowspan="1">1591176598723</td><td rowspan="1">44387</td></tr></tbody>
+</table>
+<h2>Products</h2><h3 id="m0">com.zoho.crm.scripts.CommonDP.ProductsScript#createProductsOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr><tr class="param stripe"><td>Product</td><td>HP laptop</td><td>HP-2024</td><td>Shekhar Anand</td><td>8958471230</td><td>vendor@hp.com</td><td>LexPon Inc.</td><td>Apr 30, 2020</td><td>Apr 29, 2021</td><td>Apr 30, 2020</td><td>Apr 29, 2021</td><td>5000</td><td>5</td><td>60</td><td>50</td><td>10</td><td>30</td><td>Product information about Hp Laptop</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.zoho.crm.scripts.CommonDP.ProductsScript#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>https://www.zoho.com/crm/crmplus</td><td>9squarezoho1@gmail.com</td><td>$Apple123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>PriceBook</h2><h3 id="m2">com.zoho.crm.scripts.CommonDP.PriceBookScript#createPriceBooks</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Price</td><td>Hp Laptop</td><td>This contains details about price book section for Hp laptop</td><td>2000</td><td>10000</td><td>15</td><td>48000</td></tr><tr><th colspan="7">Messages</th></tr><tr><td colspan="7"><div class="messages">Create New Price Book Handled<br/>Create Another Price Book Handled</div></td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.NullPointerException
+	at com.zoho.crm.pages.PriceBooksPage.priceBookName(PriceBooksPage.java:158)
+	at com.zoho.crm.scripts.CommonDP.PriceBookScript.createPriceBooks(PriceBookScript.java:58)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.zoho.crm.scripts.CommonDP.PriceBookScript#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>https://www.zoho.com/crm/crmplus</td><td>9squarezoho1@gmail.com</td><td>$Apple123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

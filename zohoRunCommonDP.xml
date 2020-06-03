@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Zoho">
+<!--  
+<groups>
+  <run>
+   <exclude name="Quotes"/>
+   <exclude name="salesOrders"/>
+ <exclude name="purchaseOrders"/>
+  </run>
+  </groups> 
+-->
+<!--  
+  <test thread-count="5" name="Login">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.zoho.crm.scripts.LoginScript"/>
+    </classes>
+  </test> 
+  -->
+  
+
+    <test name="Products">
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.zoho.crm.scripts.CommonDP.ProductsScript"/>
+    </classes>
+  </test> 
+ 
+      <test  name="PriceBook">
+      <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.zoho.crm.scripts.CommonDP.PriceBookScript"/>
+    </classes>
+  </test> 
+   <!-- 
+      <test name="Quotes">
+      <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.zoho.crm.scripts.CommonDP.QuotesScript"/>
+    </classes>
+  </test> 
+  
+      <test  name="PurchaseOrders">
+      <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.zoho.crm.scripts.CommonDP.PurchaseOrdersScript"/>
+    </classes>
+  </test> 
+  
+      <test  name="SalesOrders">
+      <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.zoho.crm.scripts.CommonDP.SalesOrdersScript"/>
+    </classes>
+  </test> 
+    -->
+</suite> 
