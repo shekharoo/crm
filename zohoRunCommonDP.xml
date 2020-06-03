@@ -26,14 +26,14 @@
       <class name="com.zoho.crm.scripts.CommonDP.ProductsScript"/>
     </classes>
   </test> 
- 
+   <!-- 
       <test  name="PriceBook">
       <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.zoho.crm.scripts.CommonDP.PriceBookScript"/>
     </classes>
   </test> 
-   <!-- 
+ 
       <test name="Quotes">
       <parameter name="browser" value="chrome"></parameter>
     <classes>
