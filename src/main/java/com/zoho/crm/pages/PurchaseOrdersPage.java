@@ -20,6 +20,9 @@ public class PurchaseOrdersPage extends BaseTest{
 	
 	public static final Logger log =  LogManager.getLogger(PurchaseOrdersPage.class.getName());
 	
+	@FindBy(xpath = "//span[contains(text(),'Welcome')]")
+	private WebElement homePage;
+	
 	@FindBy(xpath = "//iframe[@id='crmLoadFrame']")
 	private WebElement switchFrame;
 	
@@ -250,6 +253,15 @@ public class PurchaseOrdersPage extends BaseTest{
 		log.info("Initialization of elements successfull for Purchase Order elements!!");
 		log.info("=======================================================================");
 	}
+	
+	public void homePage()
+	{
+		driver.switchTo().frame(switchFrame);
+		element=waitDriver(driver,homePage,30);
+		log.info("Welcome(Home Page) is displayed");
+		driver.switchTo().defaultContent();
+	}
+	
 	public void moreOptions()
 	{
 		element=waitDriverClickable(driver,moreOptions,15);

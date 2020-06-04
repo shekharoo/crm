@@ -45,6 +45,7 @@ public class ProductsScript extends BaseTest{
 		{
 			
 			   pg = new ProductsPage(driver);
+			   pg.homePage();
                pg.moreOptions();
                pg.searchBox(search);
                pg.productOrdersClick();

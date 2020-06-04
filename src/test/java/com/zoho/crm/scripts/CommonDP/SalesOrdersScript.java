@@ -42,6 +42,7 @@ public class SalesOrdersScript extends BaseTest{
 		{
 			so = new SalesOrdersPage(driver);
 			
+			so.homePage();
 			so.moreOptions();
 			so.searchBox(search);
 			so.salesOrdersClick();

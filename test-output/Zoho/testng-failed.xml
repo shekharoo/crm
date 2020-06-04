@@ -15,18 +15,4 @@
       </class> <!-- com.zoho.crm.scripts.CommonDP.ProductsScript -->
     </classes>
   </test> <!-- Products(failed) -->
-  <test thread-count="5" name="SalesOrders(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.zoho.crm.scripts.CommonDP.SalesOrdersScript">
-        <methods>
-          <include name="testStatus"/>
-          <include name="createSalesOrders"/>
-          <include name="setUp"/>
-          <include name="openBrowser"/>
-          <include name="testCounts"/>
-        </methods>
-      </class> <!-- com.zoho.crm.scripts.CommonDP.SalesOrdersScript -->
-    </classes>
-  </test> <!-- SalesOrders(failed) -->
 </suite> <!-- Failed suite [Zoho] -->

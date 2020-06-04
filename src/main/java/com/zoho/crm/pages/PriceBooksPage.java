@@ -17,6 +17,9 @@ public class PriceBooksPage extends BaseTest{
 	public WebDriver driver;
 	public WebElement element;
 	
+	@FindBy(xpath = "//span[contains(text(),'Welcome')]")
+	private WebElement homePage;
+	
 	@FindBy(xpath = "//iframe[@id='crmLoadFrame']")
 	private WebElement switchFrame;
 	
@@ -108,6 +111,14 @@ public class PriceBooksPage extends BaseTest{
 		log.info("=======================================================================");
 		log.info("Initialization of elements successfull for Price Books Page elements!!");
 		log.info("=======================================================================");
+	}
+	
+	public void homePage()
+	{
+		driver.switchTo().frame(switchFrame);
+		element=waitDriver(driver,homePage,30);
+		log.info("Welcome(Home Page) is displayed");
+		driver.switchTo().defaultContent();
 	}
 	
 	public void moreOptions()

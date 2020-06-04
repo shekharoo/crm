@@ -47,6 +47,7 @@ public class PriceBookScript extends BaseTest{
 				String fRange,String tRange,String dsc, String lPrice)
 		{
 			pb  = new PriceBooksPage(driver);
+			pb.homePage();
 			pb.moreOptions();
 			pb.searchBox(search);
 			pb.priceBooksClick();

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Purchase2(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Zoho]">
+  <test thread-count="5" name="Products(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.zoho.crm.scripts.CommonDP.ProductsScript">
@@ -14,5 +14,5 @@
         </methods>
       </class> <!-- com.zoho.crm.scripts.CommonDP.ProductsScript -->
     </classes>
-  </test> <!-- Purchase2(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Products(failed) -->
+</suite> <!-- Failed suite [Zoho] -->

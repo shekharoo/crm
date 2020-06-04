@@ -17,6 +17,9 @@ public class QuotesPage extends BaseTest{
 	
 	public static final Logger log =  LogManager.getLogger(QuotesPage.class.getName());
 	
+	@FindBy(xpath = "//span[contains(text(),'Welcome')]")
+	private WebElement homePage;
+	
 	@FindBy(xpath = "//iframe[@id='crmLoadFrame']")
 	private WebElement switchFrame;
 	
@@ -270,6 +273,14 @@ public class QuotesPage extends BaseTest{
 		log.info("=======================================================================");
 		log.info("Initialization of elements successful for Quotes elements!!");
 		log.info("=======================================================================");
+	}
+	
+	public void homePage()
+	{
+		driver.switchTo().frame(switchFrame);
+		element=waitDriver(driver,homePage,30);
+		log.info("Welcome(Home Page) is displayed");
+		driver.switchTo().defaultContent();
 	}
 	
 	public void clickQuotesLink()

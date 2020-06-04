@@ -45,6 +45,7 @@ public class PurchaseOrdersScript extends BaseTest{
 		{
 			po = new PurchaseOrdersPage(driver);
 			
+			po.homePage();
 			po.moreOptions();
 			po.searchBox(search);
 			po.purchaseOrdersClick();

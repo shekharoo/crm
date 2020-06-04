@@ -1,12 +1,8 @@
 package com.zoho.crm.pages;
 
-import java.util.List;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,6 +17,9 @@ public class ProductsPage extends BaseTest{
 	JavascriptExecutor jsp =  null;
 	
 	public static final Logger log =  LogManager.getLogger(ProductsPage.class.getName());
+	
+	@FindBy(xpath = "//span[contains(text(),'Welcome')]")
+	private WebElement homePage;
 	
 	@FindBy(id = "commonUimoreModuleListicon")
 	private WebElement moreOptions;
@@ -230,6 +229,14 @@ public class ProductsPage extends BaseTest{
 		log.info("=======================================================================");
 	}
 	
+	public void homePage()
+	{
+		driver.switchTo().frame(switchFrame);
+		element=waitDriver(driver,homePage,30);
+		log.info("Welcome(Home Page) is displayed");
+		driver.switchTo().defaultContent();
+	}
+	
 	public void moreOptions()
 	{
 		element=waitDriverClickable(driver,moreOptions,15);
@@ -240,7 +247,7 @@ public class ProductsPage extends BaseTest{
 	
 	public void searchBox(String search)
 	{
-		element=waitDriver(driver,searchBox,15);
+		element=waitDriver(driver,searchBox,30);
 		log.info("searchBox textfield is displayed");
 		element.sendKeys(search);
 		log.info("searchBox is filled");
@@ -248,7 +255,7 @@ public class ProductsPage extends BaseTest{
 	
 	public void productOrdersClick()
 	{
-		element=waitDriverClickable(driver,productsClick,15);
+		element=waitDriverClickable(driver,productsClick,30);
 		log.info("purchaseOrders link is displayed");
 		element.click();
 		log.info("purchaseOrders is clicked");
@@ -262,7 +269,7 @@ public class ProductsPage extends BaseTest{
 		    log.info("=======================================================================");
 		    log.debug("Switch to Products frame successful");
 		    log.info("=======================================================================");
-			element=waitDriverClickable(driver,createFirstProducts,15);
+			element=waitDriverClickable(driver,createFirstProducts,30);
 			//driver.findElement(By.xpath("//button[text()='Create a Product']")).click();
 			log.debug("Create New Products button displayed");
 			element.click();

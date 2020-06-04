@@ -44,6 +44,7 @@ public class QuotesScript_New extends BaseTest{
 		{
             qp  = new QuotesPage(driver);
 			
+            qp.homePage();
 			qp.clickQuotesLink();	
 			
 		try {

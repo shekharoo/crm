@@ -11,7 +11,7 @@
       <![CDATA[Total skip tests: 0]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="332336" started-at="2020-06-01T20:26:42 IST" finished-at="2020-06-01T20:32:15 IST">
+  <suite name="Zoho" duration-ms="248812" started-at="2020-06-04T12:04:50 IST" finished-at="2020-06-04T12:08:59 IST">
     <groups>
       <group name="Products">
         <method signature="ProductsScript.createProductsOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="createProductsOrder" class="com.zoho.crm.scripts.CommonDP.ProductsScript"/>
@@ -20,9 +20,9 @@
         <method signature="ProductsScript.login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="login" class="com.zoho.crm.scripts.CommonDP.ProductsScript"/>
       </group> <!-- Login -->
     </groups>
-    <test name="Purchase2" duration-ms="332336" started-at="2020-06-01T20:26:42 IST" finished-at="2020-06-01T20:32:15 IST">
+    <test name="Products" duration-ms="248812" started-at="2020-06-04T12:04:50 IST" finished-at="2020-06-04T12:08:59 IST">
       <class name="com.zoho.crm.scripts.CommonDP.ProductsScript">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="openBrowser" is-config="true" duration-ms="13060" started-at="2020-06-01T20:26:43 IST" finished-at="2020-06-01T20:26:56 IST">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="openBrowser" is-config="true" duration-ms="9063" started-at="2020-06-04T12:04:50 IST" finished-at="2020-06-04T12:04:59 IST">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="setUp" is-config="true" duration-ms="2" started-at="2020-06-01T20:26:56 IST" finished-at="2020-06-01T20:26:56 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="setUp" is-config="true" duration-ms="1" started-at="2020-06-04T12:04:59 IST" finished-at="2020-06-04T12:04:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="login" duration-ms="70915" started-at="2020-06-01T20:27:01 IST" data-provider="dp" finished-at="2020-06-01T20:28:12 IST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="login" duration-ms="43098" started-at="2020-06-04T12:05:02 IST" data-provider="dp" finished-at="2020-06-04T12:05:45 IST">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="testStatus(org.testng.ITestResult)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="testStatus" is-config="true" duration-ms="4" started-at="2020-06-01T20:28:12 IST" finished-at="2020-06-01T20:28:12 IST">
+        <test-method status="PASS" signature="testStatus(org.testng.ITestResult)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="testStatus" is-config="true" duration-ms="4" started-at="2020-06-04T12:05:45 IST" finished-at="2020-06-04T12:05:45 IST">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatus -->
-        <test-method status="PASS" signature="createProductsOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="createProductsOrder" duration-ms="240253" started-at="2020-06-01T20:28:14 IST" data-provider="dp" finished-at="2020-06-01T20:32:15 IST">
+        <test-method status="PASS" signature="createProductsOrder(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="createProductsOrder" duration-ms="193197" started-at="2020-06-04T12:05:46 IST" data-provider="dp" finished-at="2020-06-04T12:08:59 IST">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createProductsOrder -->
-        <test-method status="PASS" signature="testStatus(org.testng.ITestResult)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="testStatus" is-config="true" duration-ms="2" started-at="2020-06-01T20:32:15 IST" finished-at="2020-06-01T20:32:15 IST">
+        <test-method status="PASS" signature="testStatus(org.testng.ITestResult)[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="testStatus" is-config="true" duration-ms="1" started-at="2020-06-04T12:08:59 IST" finished-at="2020-06-04T12:08:59 IST">
           <params>
             <param index="0">
               <value>
@@ -176,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatus -->
-        <test-method status="PASS" signature="testCounts()[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="testCounts" is-config="true" duration-ms="5" started-at="2020-06-01T20:32:15 IST" finished-at="2020-06-01T20:32:15 IST">
+        <test-method status="PASS" signature="testCounts()[pri:0, instance:com.zoho.crm.scripts.CommonDP.ProductsScript@5939a379]" name="testCounts" is-config="true" duration-ms="2" started-at="2020-06-04T12:08:59 IST" finished-at="2020-06-04T12:08:59 IST">
           <reporter-output>
             <line>
               <![CDATA[Total pass tests: 2]]>
@@ -190,6 +190,6 @@
           </reporter-output>
         </test-method> <!-- testCounts -->
       </class> <!-- com.zoho.crm.scripts.CommonDP.ProductsScript -->
-    </test> <!-- Purchase2 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Products -->
+  </suite> <!-- Zoho -->
 </testng-results>

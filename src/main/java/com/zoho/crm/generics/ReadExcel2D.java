@@ -3,6 +3,8 @@ package com.zoho.crm.generics;
 import java.io.File;
 import java.io.FileInputStream;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
@@ -11,6 +13,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ReadExcel2D {
+	public static final Logger log =  LogManager.getLogger(ReadExcel2D.class.getName());
 	 public static String[][] getData(String pathName, String sheetName) {
 
 	        String[][] data = null;
@@ -44,10 +47,21 @@ public class ReadExcel2D {
 	                k++;
 	            }
 	        } catch (Exception e) {
-
+	        	log.info("Error while fetching Records from Excel"+e);
 	        }
+	       /*****************************/
+	     finally {
+				try {
+					file = null;
+					wb.close();
+					wb = null;
+					fin.close();
+					fin = null;
+				} catch (Exception e) {
+					log.info("Unable to close the files"+e);
+				}
+			}
 	        return data;
-
 	    }
 	}
 
