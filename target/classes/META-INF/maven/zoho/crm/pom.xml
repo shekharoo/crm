@@ -10,6 +10,7 @@
   <name>crm</name>
   <url>http://maven.apache.org</url>
 
+<!-- Adding profiles to pom.xml to run the tests through Jenkins -->
 <profiles>
 <profile>
 <id>Regression</id>
@@ -32,7 +33,7 @@
 </build>
 </profile>
 </profiles>
-
+<!-- End Adding profiles to pom.xml to run the tests through Jenkins -->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -121,12 +122,18 @@
     <version>2.13.1</version>
 </dependency>
 
+  
 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>4.0.9</version>
 </dependency>
+  
+    
+
+    
     
     <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
 <dependency>

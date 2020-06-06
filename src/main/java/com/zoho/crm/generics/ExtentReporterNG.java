@@ -1,6 +1,7 @@
 package com.zoho.crm.generics;
 
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
@@ -9,7 +10,8 @@ public class ExtentReporterNG {
 	public static ExtentReports getReportObject()
 	{
 		String path = System.getProperty("user.dir")+"\\reports\\index.html";
-		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+		//ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter(path);
 		reporter.config().setTheme(Theme.STANDARD);
 		reporter.config().setEncoding("utf-8");
 		reporter.config().setReportName("Zoho Crm Automation Results");

@@ -106,3 +106,204 @@
 06-Jun-2020 11:43:48.266 INFO  generics.TestListeners -Screenshot Attach successful
 06-Jun-2020 11:43:48.266 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
 06-Jun-2020 11:43:48.424 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 12:51:02.852 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 12:51:02.875 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 12:51:02.875 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 12:51:02.878 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 12:51:04.714 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 12:51:04.796 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 12:51:04.796 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 12:51:04.796 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 12:51:09.012 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 12:51:16.620 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 12:51:17.193 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 12:51:20.751 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 12:51:21.224 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 12:51:22.128 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 12:51:22.521 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 12:51:22.726 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 12:51:23.036 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 12:51:23.468 INFO  pages.LoginPage -Password is filled
+06-Jun-2020 12:51:23.733 INFO  pages.LoginPage -Sign in button is displayed
+06-Jun-2020 12:51:23.910 INFO  pages.LoginPage -Sign in button is clicked
+06-Jun-2020 12:51:46.842 DEBUG generics.BaseTest -Element is not clickable
+06-Jun-2020 12:51:46.842 INFO  pages.LoginPage -yes I understand is visible
+06-Jun-2020 12:51:46.843 INFO  CommonDP.ProductsScript -(Yes I understand) is not Displayed, but handled
+06-Jun-2020 12:51:48.072 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 12:51:48.100 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 12:51:48.100 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 12:51:48.100 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 12:51:52.782 INFO  pages.ProductsPage -Welcome(Home Page) is displayed
+06-Jun-2020 12:52:08.707 DEBUG generics.BaseTest -Element is not clickable
+06-Jun-2020 12:52:08.707 INFO  pages.ProductsPage -moreOptions textfield is displayed
+06-Jun-2020 12:52:09.561 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 12:52:09.561 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 12:52:09.647 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 13:02:10.919 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:02:10.941 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 13:02:10.941 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:02:10.943 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 13:02:13.111 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 13:02:13.215 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:02:13.215 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 13:02:13.216 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:02:17.473 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 13:02:25.293 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 13:02:26.010 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 13:02:29.470 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 13:02:29.895 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 13:02:30.702 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 13:02:30.986 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 13:02:31.197 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 13:02:51.326 DEBUG generics.BaseTest -Element is not displayed
+06-Jun-2020 13:02:51.327 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 13:02:52.209 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:02:52.209 INFO  generics.TestListeners -Screenshot is taken for the failed method: login
+06-Jun-2020 13:02:53.130 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 13:02:53.157 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:02:53.157 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 13:02:53.157 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:03:03.771 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:03:03.771 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 13:03:03.848 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 13:09:18.033 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:09:18.058 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 13:09:18.058 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:09:18.060 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 13:09:20.356 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 13:09:20.566 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:09:20.566 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 13:09:20.567 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:09:25.087 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 13:09:34.953 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 13:09:35.512 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 13:09:39.246 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 13:09:39.680 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 13:09:40.346 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 13:09:40.650 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 13:09:40.892 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 13:10:01.430 DEBUG generics.BaseTest -Element is not displayed
+06-Jun-2020 13:10:01.430 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 13:10:02.056 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:10:02.056 INFO  generics.TestListeners -Screenshot is taken for the failed method: login
+06-Jun-2020 13:10:02.393 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 13:10:02.410 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:10:02.410 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 13:10:02.410 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:10:12.989 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:10:12.990 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 13:10:13.089 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 13:13:18.272 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:13:18.297 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 13:13:18.298 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:13:18.299 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 13:13:20.386 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 13:13:20.471 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:13:20.472 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 13:13:20.472 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:13:24.987 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 13:13:32.781 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 13:13:33.695 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 13:13:36.892 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 13:13:37.758 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 13:13:38.261 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 13:13:38.549 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 13:13:38.753 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 13:13:59.322 DEBUG generics.BaseTest -Element is not displayed
+06-Jun-2020 13:13:59.323 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 13:14:00.039 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:14:00.040 INFO  generics.TestListeners -Screenshot is taken for the failed method: login
+06-Jun-2020 13:14:00.547 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 13:14:00.575 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:14:00.575 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 13:14:00.575 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:14:11.222 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:14:11.223 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 13:14:11.288 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 13:26:50.621 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:26:50.637 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 13:26:50.638 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:26:50.639 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 13:26:52.881 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 13:26:52.952 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:26:52.952 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 13:26:52.952 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:26:57.165 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 13:27:05.569 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 13:27:06.597 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 13:27:10.393 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 13:27:10.830 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 13:27:11.530 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 13:27:11.877 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 13:27:12.100 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 13:27:32.191 DEBUG generics.BaseTest -Element is not displayed
+06-Jun-2020 13:27:32.192 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 13:27:32.821 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:27:32.821 INFO  generics.TestListeners -Screenshot is taken for the failed method: login
+06-Jun-2020 13:27:33.287 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 13:27:33.305 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:27:33.306 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 13:27:33.306 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:27:43.918 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:27:43.918 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 13:27:43.972 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 13:29:59.750 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:29:59.773 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 13:29:59.773 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:29:59.774 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 13:30:01.984 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 13:30:02.163 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:30:02.163 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 13:30:02.164 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:30:08.151 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 13:30:15.824 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 13:30:16.610 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 13:30:19.924 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 13:30:20.524 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 13:30:21.184 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 13:30:21.465 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 13:30:21.668 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 13:30:21.979 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 13:30:22.412 INFO  pages.LoginPage -Password is filled
+06-Jun-2020 13:30:22.676 INFO  pages.LoginPage -Sign in button is displayed
+06-Jun-2020 13:30:22.852 INFO  pages.LoginPage -Sign in button is clicked
+06-Jun-2020 13:30:43.727 DEBUG generics.BaseTest -Element is not clickable
+06-Jun-2020 13:30:43.727 INFO  pages.LoginPage -yes I understand is visible
+06-Jun-2020 13:30:43.727 INFO  CommonDP.ProductsScript -(Yes I understand) is not Displayed, but handled
+06-Jun-2020 13:30:45.009 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 13:30:45.059 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:30:45.060 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 13:30:45.062 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:30:52.803 INFO  pages.ProductsPage -Welcome(Home Page) is displayed
+06-Jun-2020 13:31:09.793 DEBUG generics.BaseTest -Element is not clickable
+06-Jun-2020 13:31:09.793 INFO  pages.ProductsPage -moreOptions textfield is displayed
+06-Jun-2020 13:31:10.400 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:31:10.400 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 13:31:10.459 INFO  generics.TestListeners -All the Tests methods have been calledProducts
+06-Jun-2020 13:45:02.496 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:45:02.514 DEBUG generics.BaseTest -Chrome browser is launched successfully!!
+06-Jun-2020 13:45:02.514 INFO  generics.BaseTest -=======================================================================
+06-Jun-2020 13:45:02.515 INFO  generics.BaseTest -Path set up successful
+06-Jun-2020 13:45:04.418 INFO  generics.TestListeners -Test has started..login
+06-Jun-2020 13:45:04.495 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:45:04.495 INFO  pages.LoginPage -Initialization of elements successfull for Login Page elements!!
+06-Jun-2020 13:45:04.495 INFO  pages.LoginPage -=======================================================================
+06-Jun-2020 13:45:08.701 INFO  generics.BaseTest -Chrome browser window is maximized
+06-Jun-2020 13:45:18.752 INFO  generics.BaseTest -Current url opened is: https://www.zoho.com/crm/crmplus
+06-Jun-2020 13:45:19.307 INFO  pages.LoginPage -login button is displayed
+06-Jun-2020 13:45:24.221 INFO  pages.LoginPage -login button is clicked
+06-Jun-2020 13:45:24.534 INFO  pages.LoginPage -Email text field is displayed
+06-Jun-2020 13:45:25.402 INFO  pages.LoginPage -Email is filled
+06-Jun-2020 13:45:25.672 INFO  pages.LoginPage -Next Button is displayed
+06-Jun-2020 13:45:25.861 INFO  pages.LoginPage -After Email NextBtn is clicked
+06-Jun-2020 13:45:46.516 DEBUG generics.BaseTest -Element is not displayed
+06-Jun-2020 13:45:46.516 INFO  pages.LoginPage -Password text field is displayed
+06-Jun-2020 13:45:47.152 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:45:47.152 INFO  generics.TestListeners -Screenshot is taken for the failed method: login
+06-Jun-2020 13:45:47.676 INFO  generics.TestListeners -Test has started..createProductsOrder
+06-Jun-2020 13:45:47.699 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:45:47.700 INFO  pages.ProductsPage -Initialization of elements successfull for Products Page elements!!
+06-Jun-2020 13:45:47.700 INFO  pages.ProductsPage -=======================================================================
+06-Jun-2020 13:45:58.338 INFO  generics.TestListeners -Screenshot Attach successful
+06-Jun-2020 13:45:58.338 INFO  generics.TestListeners -Screenshot is taken for the failed method: createProductsOrder
+06-Jun-2020 13:45:58.418 INFO  generics.TestListeners -All the Tests methods have been calledProducts

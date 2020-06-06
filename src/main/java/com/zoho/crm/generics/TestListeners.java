@@ -10,7 +10,11 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class TestListeners extends BaseTest implements ITestListener{
 	
@@ -39,7 +43,11 @@ public class TestListeners extends BaseTest implements ITestListener{
 	   */
 	  public void onTestSuccess(ITestResult result) {
 		  System.out.println("Test succeded.."+result.getMethod().getMethodName());
-		  tl.get().log(Status.PASS, "Test Passed");
+		  //tl.get().log(Status.PASS, "Test Passed");
+		  /*Extra Added****/
+		  String logText = "<b>" + "Test Method " + result.getMethod().getMethodName() + " Successful" + "</b>";
+	      Markup m = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
+	      tl.get().log(Status.PASS, m);
 	  }
 
 	  /**
@@ -49,6 +57,9 @@ public class TestListeners extends BaseTest implements ITestListener{
 	   * @see ITestResult#FAILURE
 	   */
 	  public void onTestFailure(ITestResult result) {
+		  String logText = "<b>" + "Test Method " + result.getMethod().getMethodName() + " Failed" + "</b>";
+		  Markup m = MarkupHelper.createLabel(logText, ExtentColor.RED);
+	        tl.get().log(Status.FAIL, m);
 		  tl.get().fail(result.getThrowable());
 		  //tl.get().log(Status.FAIL, "Test Failed");
 		  try {
@@ -57,7 +68,10 @@ public class TestListeners extends BaseTest implements ITestListener{
 		  String filePath = IConstant.PHOTO_PATH + result.getMethod().getMethodName() + ".png";
 		  FUtils.takeScreenshot(driver, filePath);
 		 
-			tl.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+			//tl.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+			tl.get().fail("<b>" + "<font color=red>" +
+                    "Screenshot of failure" + "</font>" + "</b>",
+                    MediaEntityBuilder.createScreenCaptureFromPath(filePath).build());
 			//test.addScreenCaptureFromPath(filePath);
 			//test.addScreenCaptureFromBase64String(filePath);
 			log.info("Screenshot Attach successful");
@@ -69,6 +83,9 @@ public class TestListeners extends BaseTest implements ITestListener{
 		  log.info("Screenshot is taken for the failed method: "+ result.getMethod().getMethodName());
 		 // tl.get().fail(result.getThrowable());
 //		  test.fail(result.getThrowable());
+		  
+		    //String logText = "<b>" + "Test Method " + result.getMethod().getMethodName() + " Failed" + "</b>";
+	       
 	  }
 
 	  /**
