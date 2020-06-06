@@ -41,7 +41,7 @@ public class ProductsScript extends BaseTest{
 		public void createProductsOrder(String search,String prodName,String prodCode,String vendName,String vendPhone,
 				String vendEmail,String selManft,String salesStrDate,String salesEndDate,String suppStrDate
 			,String suppExpDate,String unitPrice,String commRate,String prodQty,String qtyStock
-			,String reOrdLevel,String qtyDemand,String prodDescription) throws InterruptedException
+			,String reOrdLevel,String qtyDemand,String prodDescription) 
 		{
 			
 			   pg = new ProductsPage(driver);
@@ -63,9 +63,12 @@ public class ProductsScript extends BaseTest{
 					   log.debug("Click Create Product not visible, but handled-->createNewProduct");
 				}
 				
-			   Thread.sleep(10000);
-				List<WebElement> list1 = driver.findElements(By.xpath("//div[@class='listviewtablescroll']/table/tbody/tr"));
-		        System.out.println("Total no of records is: "+ list1.size());
+			   pg.recordsDropDown();
+			   pg.recordsSelect();
+				//List<WebElement> list1 = driver.findElements(By.xpath("//div[@class='listviewtablescroll']/table/tbody/tr"));
+//				List<WebElement> list1 = driver.findElements(By.xpath("(//lyte-yield[@class='lyteExpTableRowGroup'])[2]/lyte-exptable-tr"));
+//				System.out.println("Total no of records is: "+ list1.size());
+				pg.countRecords();
 			   
 			   try {
 					   pg.clickAnotherProducts();

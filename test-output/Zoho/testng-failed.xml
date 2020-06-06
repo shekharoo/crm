@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Zoho]">
+  <listeners>
+    <listener class-name="com.zoho.crm.generics.TestListeners"/>
+  </listeners>
   <test thread-count="5" name="Products(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.zoho.crm.scripts.CommonDP.ProductsScript">
         <methods>
-          <include name="testStatus"/>
           <include name="setUp"/>
           <include name="openBrowser"/>
           <include name="createProductsOrder" invocation-numbers="0"/>
+          <include name="login" invocation-numbers="0"/>
           <include name="testCounts"/>
         </methods>
       </class> <!-- com.zoho.crm.scripts.CommonDP.ProductsScript -->

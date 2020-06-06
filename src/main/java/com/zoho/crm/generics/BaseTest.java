@@ -1,21 +1,12 @@
 package com.zoho.crm.generics;
 import java.lang.reflect.Method;
-import java.lang.reflect.Parameter;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
-import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.poi.ss.usermodel.Sheet;
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,6 +14,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 public class BaseTest implements IConstant{
 	public static WebDriver driver;
@@ -108,6 +106,22 @@ public class BaseTest implements IConstant{
 		return el;
 	}
 	
+	//Returns no of Records from the table
+	public static int records(WebDriver driver,By record ,long time)
+	{
+		int recordsCount = 0;
+		WebElement el=null;
+		try {
+		WebDriverWait wait  = new WebDriverWait(driver, time);
+		el = wait.until(ExpectedConditions.visibilityOfElementLocated(record));
+		List<WebElement> records = driver.findElements(record);
+		log.debug("records count is found successfully");
+		recordsCount = records.size();
+		} catch (Exception e) {
+			log.debug("Element is not Visible");
+		}
+		return recordsCount;
+	}
 	
 	//Staleness of element
 	public static boolean staleElement(WebDriver driver, WebElement element,long time)
@@ -206,29 +220,29 @@ public class BaseTest implements IConstant{
 	
 	//================Common Data Provider End==============================//
 	
-	@AfterMethod
-	public void testStatus(ITestResult result)
-	{
-		String testMethodName = result.getMethod().getMethodName();
-		int testMethodStatus = result.getStatus();
-		if(result.getStatus()==ITestResult.SUCCESS)
-		{
-			passCount++;
-			log.info(testMethodName + "is sucessfully executed");
-		}
-		else if(result.getStatus()==ITestResult.FAILURE)
-		{
-			failCount++;
-			log.info(testMethodName + "is failed");
-			String filePath = IConstant.PHOTO_PATH + testMethodName + ".png";
-			FUtils.takeScreenshot(driver, filePath);
-			log.info("Screenshot is taken for the failed method: "+ testMethodName);
-		}
-		else if(result.getStatus()==ITestResult.SKIP)
-		{
-			skipCount++;
-		}
-	}
+//	@AfterMethod
+//	public void testStatus(ITestResult result)
+//	{
+//		String testMethodName = result.getMethod().getMethodName();
+//		int testMethodStatus = result.getStatus();
+//		if(result.getStatus()==ITestResult.SUCCESS)
+//		{
+//			passCount++;
+//			log.info(testMethodName + "is sucessfully executed");
+//		}
+//		else if(result.getStatus()==ITestResult.FAILURE)
+//		{
+//			failCount++;
+//			log.info(testMethodName + "is failed");
+//			String filePath = IConstant.PHOTO_PATH + testMethodName + ".png";
+//			FUtils.takeScreenshot(driver, filePath);
+//			log.info("Screenshot is taken for the failed method: "+ testMethodName);
+//		}
+//		else if(result.getStatus()==ITestResult.SKIP)
+//		{
+//			skipCount++;
+//		}
+//	}
 	
 	public void closeBrowser()
 	{

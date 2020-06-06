@@ -2,6 +2,7 @@ package com.zoho.crm.pages;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +19,7 @@ public class ProductsPage extends BaseTest{
 	
 	public static final Logger log =  LogManager.getLogger(ProductsPage.class.getName());
 	
+	By records = By.xpath("(//lyte-yield[@class='lyteExpTableRowGroup'])[2]/lyte-exptable-tr");
 	@FindBy(xpath = "//span[contains(text(),'Welcome')]")
 	private WebElement homePage;
 	
@@ -32,6 +34,21 @@ public class ProductsPage extends BaseTest{
 	@FindBy(id = "crmpluscommonui_crm_Products")
 	private WebElement productsClick;
 	
+	//Click on Records per page drop down 
+	@FindBy(xpath = "(//lyte-icon[@class='dropdown'])[2]")
+	private WebElement recordsDropDown;
+	
+//	//Select 50 Records per page
+//	@FindBy(xpath = "//lyte-drop-box[@class='lyteDropdownCurve lyteDropdownUp']/lyte-drop-body/lyte-drop-item[5]")
+//	private WebElement recordsSelect;
+	
+	//Select 50 Records per page
+	@FindBy(xpath = "(//lyte-drop-body)[3]/lyte-drop-item[5]")
+	private WebElement recordsSelect;
+	
+	//Count no of records
+	@FindBy(xpath = "(//lyte-yield[@class='lyteExpTableRowGroup'])[2]/lyte-exptable-tr")
+	private WebElement countRecords;
 	//Create button link when already products are existing
 	//span[@class='customPluswithImpotBtnCon pR']/link-to/button
 	//public final String createAnprod = "//button[@data-zcqa='cv_createbtn']";
@@ -259,6 +276,30 @@ public class ProductsPage extends BaseTest{
 		log.info("purchaseOrders link is displayed");
 		element.click();
 		log.info("purchaseOrders is clicked");
+	}
+	
+	public void recordsDropDown()
+	{
+		element=waitDriverClickable(driver,recordsDropDown,30);
+		log.info("Records DropDown is displayed");
+		element.click();
+		log.info("Records DropDown is clicked");
+	}
+	
+	public void recordsSelect()
+	{
+		element=waitDriverClickable(driver,recordsSelect,30);
+		log.info("Records DropDown 50 is displayed");
+		element.click();
+		log.info("Records DropDown 50 is clicked");
+	}
+	
+	public void countRecords()
+	{
+		element=waitDriver(driver,countRecords,30);
+		int recordsCount = records(driver, records, 30);
+		log.info("Total no of records is: " + recordsCount);
+		System.out.println("Total no of records is: " + recordsCount);
 	}
 	
 	

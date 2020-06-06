@@ -1,6 +1,9 @@
 package com.zoho.crm.pages;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.TreeSet;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -132,8 +135,22 @@ public class Demo implements ITestListener{
 	public static void main(String[] args) {
 	WebDriver	driver = new ChromeDriver();
 	driver.get("https://www.filmibeat.com/bollywood/movies/box-office-collection-2019.html");
-	List<WebElement> list1 = driver.findElements(By.xpath("//div[@class='boxoffice-list']/table/tbody/tr"));
+	List<WebElement> list1 = driver.findElements(By.xpath("//a"));
 	System.out.println("Size is: " + list1.size());
+	
+	//TreeSet<String> tr = new TreeSet<String>(Collections.reverseOrder());
+	ArrayList<String> ar = new ArrayList<String>();
+	for(WebElement l:list1)
+	{
+		//tr.add(l.getText());
+		  ar.add(l.getText());
+	}
+	//for(String s : tr)
+	Collections.sort(ar, Collections.reverseOrder());
+	for(String s : ar)
+	{
+		System.out.println(s);
+	}
 	}
 }
 
