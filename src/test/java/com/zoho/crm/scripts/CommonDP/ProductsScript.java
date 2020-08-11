@@ -63,12 +63,17 @@ public class ProductsScript extends BaseTest{
 					   log.debug("Click Create Product not visible, but handled-->createNewProduct");
 				}
 				
-			   pg.recordsDropDown();
-			   pg.recordsSelect();
-				//List<WebElement> list1 = driver.findElements(By.xpath("//div[@class='listviewtablescroll']/table/tbody/tr"));
-//				List<WebElement> list1 = driver.findElements(By.xpath("(//lyte-yield[@class='lyteExpTableRowGroup'])[2]/lyte-exptable-tr"));
-//				System.out.println("Total no of records is: "+ list1.size());
-				pg.countRecords();
+			   try {
+				   pg.recordsDropDown();
+				   pg.recordsSelect();
+					//List<WebElement> list1 = driver.findElements(By.xpath("//div[@class='listviewtablescroll']/table/tbody/tr"));
+//					List<WebElement> list1 = driver.findElements(By.xpath("(//lyte-yield[@class='lyteExpTableRowGroup'])[2]/lyte-exptable-tr"));
+//					System.out.println("Total no of records is: "+ list1.size());
+					pg.countRecords();
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+
 			   
 			   try {
 					   pg.clickAnotherProducts();
